@@ -23,3 +23,4 @@ group :production do
 end
 
 gem 'unicorn'
+gem 'newrelic_rpm'

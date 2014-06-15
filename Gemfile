@@ -4,7 +4,8 @@ ruby '2.1.2'
 gem 'rails', '4.1.1'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.1.1'
+gem 'simple_form', '3.1.0.rc1'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
@@ -19,6 +20,7 @@ gem 'devise', '~> 3.2.4'
 gem 'unicorn'
 gem 'newrelic_rpm'
 gem "figaro"
+
 
 group :development, :test do
 	gem 'rspec-rails'	

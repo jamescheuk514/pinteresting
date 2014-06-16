@@ -17,5 +17,7 @@
 
 # Ignore application configuration
 /config/application.yml
+<<<<<<< HEAD
 
-secrets.yml
+=======
+>>>>>>> new_breanch_name

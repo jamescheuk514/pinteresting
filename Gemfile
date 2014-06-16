@@ -16,8 +16,6 @@ gem 'spring',        group: :development
 gem 'bcrypt', '~> 3.1.7'
 gem 'devise', '~> 3.2.4'
 
-
-
 gem 'unicorn'
 gem 'newrelic_rpm'
 gem "figaro"

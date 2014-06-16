@@ -84,8 +84,6 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: ENV["mailer_default_url_host"] }
 
-
-  #set paperclip upload image to aws s3
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {

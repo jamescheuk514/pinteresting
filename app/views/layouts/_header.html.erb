@@ -21,8 +21,10 @@
       <%= render 'layouts/navbar_search' %>
       
       <ul class="nav navbar-nav navbar-right">
+      <% if user_signed_in? %>
         <%= render 'layouts/navbar_content_menu' %>
         <%= render 'layouts/navbar_upload_menu' %>
+      <% end %>
         <%= render 'layouts/navbar_account_menu' %>
       </ul>
     </div><!-- /.navbar-collapse -->

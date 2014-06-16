@@ -14,14 +14,16 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'bcrypt', '~> 3.1.7'
-
 gem 'devise', '~> 3.2.4'
-gem 'paperclip', '~> 3.5.2'
+
+
 
 gem 'unicorn'
 gem 'newrelic_rpm'
 gem "figaro"
 
+gem 'paperclip', github: 'thoughtbot/paperclip'
+gem 'aws-sdk'
 
 group :development, :test do
 	gem 'rspec-rails'	

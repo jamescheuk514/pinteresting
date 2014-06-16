@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/thoughtbot/paperclip.git
+  revision: 73fd316733325c8de2f16e5f3655b4938dfb156e
+  specs:
+    paperclip (4.1.1)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.3)
+      mime-types
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,6 +38,9 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    aws-sdk (1.43.2)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
     bcrypt (3.1.7)
     bootstrap-sass (3.1.1.1)
       sass (~> 3.2)
@@ -69,15 +82,13 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    mini_portile (0.6.0)
     minitest (5.3.4)
     multi_json (1.10.1)
     newrelic_rpm (3.8.1.221)
+    nokogiri (1.6.2.1)
+      mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
-    paperclip (3.5.4)
-      activemodel (>= 3.0.0)
-      activesupport (>= 3.0.0)
-      cocaine (~> 0.5.3)
-      mime-types
     pg (0.17.1)
     polyglot (0.3.5)
     rack (1.5.2)
@@ -169,6 +180,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-sdk
   bcrypt (~> 3.1.7)
   bootstrap-sass (~> 3.1.1)
   coffee-rails (~> 4.0.0)
@@ -177,7 +189,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   newrelic_rpm
-  paperclip (~> 3.5.2)
+  paperclip!
   pg
   rails (= 4.1.1)
   rails_12factor

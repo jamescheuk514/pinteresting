@@ -19,6 +19,9 @@
 	</li>
 <% else %>
 			<li class="dropdown">
-				<%= link_to (raw('<span class="glyphicon glyphicon-user"></span><span> Login</span>')) , new_user_session_path %>
+				<%= link_to new_user_session_path do %>
+					<span class="glyphicon glyphicon-user"></span>
+					Login
+				<% end %>
 			</li>
 <% end %>

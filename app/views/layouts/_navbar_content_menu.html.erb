@@ -13,9 +13,3 @@
     <li><a href="#">One more separated link</a></li>
   </ul>
 </li>
-
-<%
-=begin %>
-<%= link_to_if(@current_user.nil?, "Login", { controller: "sessions", action: "new" }) %>
-<%
-=end %>

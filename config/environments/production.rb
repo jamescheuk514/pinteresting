@@ -83,6 +83,7 @@ Rails.application.configure do
 
 
   config.action_mailer.default_url_options = { host: ENV["mailer_default_url_host"] }
+<<<<<<< HEAD
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
@@ -92,3 +93,6 @@ Rails.application.configure do
   }
 }
 end
+=======
+end
+>>>>>>> parent of 72b9283... set paperclip uplood image to aws s3

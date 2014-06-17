@@ -17,10 +17,6 @@
 
 # Ignore application configuration
 /config/application.yml
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> new_breanch_name
-=======
->>>>>>> parent of 72b9283... set paperclip uplood image to aws s3
+/public/system/*
+

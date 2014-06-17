@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :pins
 
+  validates :name, presence: true
   # overwrite the remember_me default: set to true       
   def remember_me
   	true

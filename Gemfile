@@ -26,6 +26,10 @@ gem 'masonry-rails'
 gem 'paperclip'
 gem 'aws-sdk'
 
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+
+
 group :development, :test do
 	gem 'rspec-rails'	
 end

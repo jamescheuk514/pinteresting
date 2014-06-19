@@ -4,6 +4,8 @@
   <div id="pins-container" class="transitions-enabled infinite-scroll">
     <%= render partial: 'pins/pins', locals: { pins: @pins} %>  
   </div>
-  <%= link_to 'Load More Pins', pins_path(:page => @pins.next_page), :class => 'load-more-pins', :remote => true if @pins.next_page %>
-
 </nav>
+
+<div class="center">
+   <%= will_paginate @pins, renderer: BootstrapPagination::Rails %>
+</div>

@@ -5,11 +5,7 @@ class PinsController < ApplicationController
   
 
   def index
-    @pins = Pin.paginate(:page => params[:page], :per_page => 8)
-    respond_to do |format|
-      format.html
-      format.js
-    end
+    @pins = Pin.order("created_at DESC").paginate(:page => params[:page], :per_page => 8)
   end
 
   def show

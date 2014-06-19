@@ -4,7 +4,16 @@
 
 
 $ ->
-  $('#pins').imagesLoaded ->
-    $('#pins').masonry
+  $('#pins-container').imagesLoaded ->
+    $('#pins-container').masonry
       itemSelector: '.box'
       isFitWidth: true
+
+  $('#pins-container').infinitescroll ->
+  	navselector: '#page-nav'
+  	nextselector: '#page-nav a'
+  	itemSelector: '.box'
+  	loading: {
+  		finishedMsg: 'No more pins to load.'
+  		img: 'http://i.imgur.com/6RMhx.gif'
+  	}
